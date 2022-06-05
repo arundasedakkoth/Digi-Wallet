@@ -1,0 +1,88 @@
+.mainlist {
+    background-color:rgb(216, 208, 208);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 700px;
+    justify-content: space-between;
+    border-bottom: 2px solid black;
+    margin-bottom: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+  
+   
+  }
+  
+  .namesec {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    
+  }
+  
+  /* .circle{
+      border-radius: 50%;
+      width: 50px;
+      height: 40px;
+      background-color: rgb(73, 73, 73);
+      margin-left: 15px;
+  } */
+  
+  .price{
+      display: flex;
+      justify-content: center;
+  }
+  
+  .date{
+      margin-right: 15px;
+  }
+  
+  .status{
+      text-align: center;
+      background-color: rgb(194, 194, 194);
+      /* width: 100px; */
+      border-radius: 10px;
+      padding: .2rem .6rem;
+  }
+
+  .user-name{
+      color: rgb(35, 178, 244);
+  }
+  
+  .avatar_email{
+      color: rgb(111, 107, 107);
+  }
+  .green, .green:hover{
+      color: #ffffff;
+      background: rgb(52, 167, 52);
+  }
+  
+  .blue, .blue:hover{
+      color:rgb(120, 120, 247);
+      background: #ffffff;
+      border: 1px solid rgb(120, 120, 247);
+  }
+  
+  .orange, .orange:hover{
+      color: rgb(250, 139, 47);
+      background: #ffffff;
+      border: 1px solid rgb(250, 139, 47);
+  }
+
+  .red {
+    color: rgb(244, 15, 3);
+    background: #ffffff;
+    border: 1px solid rgb(244, 15, 3);
+  }
+
+  .fa-arrow-trend-down{
+      color: #f80505;
+  }
+
+  .fa-arrow-trend-up{
+    color: #05941d;
+}
+
+  .fa-loader{
+      color: rgb(120, 120, 247);
+}

@@ -1,38 +1,200 @@
-.App {
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #e3f2fd !important;
+  max-width: 99%;
+  margin: 0;
+}
+
+.active {
+  background-color: #fff
+}
+
+.row {
+  display: flex;
+  justify-content: space-around;
+}
+
+.column1 {
+  width : fit-content;
+  width: 2%;
+  background-color: #e3f2fd !important; 
+  min-height : 80vh;
+  padding: 0;
+}
+
+.column2 {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff !important; 
+  width: 1200px;
+  max-height: 90vh;
+  width: 94%;
+  border-radius: 20px;
+  margin: 0;
+  padding: 0;
+}
+
+.typecard, .spent, .balance {
+  display: inline-block;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 400px;
+  height: 250px;
+  border-radius: 10px;
+}
+
+.typecard {
+  background: rgb(0,0,0);
+  background: linear-gradient(45deg, rgba(0,0,0,1) 5%, rgba(0,0,0,1) 55%, rgb(81, 81, 82) 100%);
+  }
+
+.spent {
+  background: rgb(0,0,0);
+  background: linear-gradient(45deg, rgba(0,0,0,1) 5%, rgba(0,0,0,1) 55%, rgb(3, 101, 120) 100%);
+}
+
+.balance {
+  background: rgb(0,0,0);
+  background: linear-gradient(45deg, rgba(0,0,0,1) 5%, rgba(0,0,0,1) 55%, rgb(141, 2, 5) 100%);
+}   
+
+.spent h2 {
+  padding-top: 57px;
+}
+
+.balance h2 {
+  padding-top: 86px;
+}
+
+
+.card h3, h5 {
+  margin: 0;
+  font-weight: bold;
+  font-size: 24px;
+  padding: 5px;
+  color: #ffffff;
+}
+
+.cardnum {
+  padding-top: 20px;
+  margin: auto;
+  font-size: 24px;
+  font-family: kredit-front;
+  letter-spacing: .3rem;
+}
+
+.amount {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.name {
+  display: inline-block;
+  padding-top: 5px;
+  bottom: 0;
+}
+
+.spcbtwn {
+  display: flex;
+  justify-content: space-between;
+}
+
+.debitcard {
+  display: inline;
+  color: #bbb;
+  padding-top: 10px;
+}
+
+.namecard {
+  display: inline;
+}
+
+.card-body {
+  padding-top: 0;
+}
+
+.chipimage {
+  width: 50px;
+}
+
+.dropdown a {
+  color:#918e8e;
+  font-size: 10px;
+}
+
+.dropdown a:hover {
+  color:#918e8e
+}
+
+.avatar {
+  border-radius: 50%;
+  background: #81817f; 
+  padding: 20px; 
+  width: 40px; 
+  height: 40px;
+}
+
+.trantype {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.navbar-brand {
+  margin-left: 80px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.navbar-brand h1 {
+  font-size: 25px;
+  font-weight: bold;
+  background: -webkit-linear-gradient(rgb(84, 206, 222), rgb(37, 81, 225));
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.form-control {
+  border: transparent;
+  border-radius: 25px;
+}
+
+.progress-btn {
+  border-radius: 20px;
+}
+
+.savingschart {
+  width: 40%;
+}
+
+.avatar_email {
+  font-size: 12px;
+}
+
+.side-grey{
+  color: rgb(42, 42, 42);
+}
+
+#navbar {
+  background-color: #e3f2fd;
+  padding: 20px 0;
+}
+
+#sidebar {
+  display: flex;
+  justify-content: center;
+  background-color: #e3f2fd;
+  max-height: 8 0vh;
+}
+
+#sidebar-icons {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  margin: 0;
+  color: rgb(42, 42, 42);
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  width: 30px;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#transactions {
+  width : 50%;
 }

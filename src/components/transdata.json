@@ -1,0 +1,42 @@
+[
+    {
+        "user": "Lucas Amaeta",
+        "mailid": "lucasamaeta@info.com",
+        "type": "SEND",
+        "amount": 289,
+        "date": "SEP 12 2019"
+
+    },
+    {
+        "user": "Nil Matheu",
+        "mailid": "nilmathue789@info.com",
+        "type": "RECEIVED",
+        "amount": 178,
+        "date": "SEP 14 2019"
+
+    },
+    {
+        "user": "Anna Gristina",
+        "mailid": "annagristina22@info.com",
+        "type": "SENT",
+        "amount": 380,
+        "date": "SEP 16 2019"
+
+    },
+    {
+        "user": "Cris Hanstrang",
+        "mailid": "crishanstrang4899@info.com",
+        "type": "PENDING",
+        "amount": 330,
+        "date": "SEP 16 2019"
+
+    },
+    {
+        "user": "Sarah Taylor   ",
+        "mailid": "sarahtaylor99@info.com",
+        "type": "PENDING",
+        "amount": 289,
+        "date": "SEP 17 2019"
+
+    }
+]

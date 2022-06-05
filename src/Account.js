@@ -40,6 +40,7 @@ export default class Account extends React.Component {
     render() {
         return (
             <div className="mx-2 my-5 row">
+                <h3 className="pagehead ml-20">Dashboard</h3>
                 <div className="card flex typecard text-white bg-dark mx-2 my-1 xs:mb-3 sm:mb-3">
                     <div className="card-header spcbtwn">
                         <h6 className="debitcard">{this.state.typeOfCard}</h6>

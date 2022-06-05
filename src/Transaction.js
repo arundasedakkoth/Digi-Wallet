@@ -1,6 +1,6 @@
-import './components/TransactionList.css'
+import './components/Transaction.css'
 
-const TransactionList = (props) => {
+const Transaction = (props) => {
   let setcolor
   let setarrow
   if (props.status === "Sent") {
@@ -19,16 +19,6 @@ const TransactionList = (props) => {
   }
 
   return (
-    // <div className="mainlist">
-    //   <span className="circle"></span>
-    //   <div className="namesec">
-    //     <span>{props.user}</span>
-    //     <span>{props.email}</span>
-    //   </div>
-    //   <span className={`price  `}>{props.cost}</span>
-    //   <span className={`status ${setcolor}   `}>{props.status}</span>
-    //   <span className="date">{props.date}</span>
-    // </div>
     <tr>
         <th scope="row"> <div className="avatar"></div> </th>
         <td> <h6 className="user-name">{props.user}</h6> <span className = "avatar_email">{props.email}</span> </td>
@@ -39,4 +29,4 @@ const TransactionList = (props) => {
   )
 }
 
-export default TransactionList;
+export default Transaction;

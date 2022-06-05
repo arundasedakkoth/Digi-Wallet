@@ -1,15 +1,15 @@
 import React from "react";
 import {BrowserRouter as Router, Routes, Route} from "react-router-dom";
 
-import Navbar from './navbar';
-import Main from './main';
+import Navbar from './Navbar';
+import Main from './Main';
 import './App.css';
-import Sidebar from './sidebar';
-import Messages from "./pages/Messages";
-import Notifications from "./pages/Notifications";
-import History from "./pages/History";
-import Savings from "./pages/Savings";
-import Settings from "./pages/Settings";
+import Sidebar from './Sidebar';
+import Messages from "./Messages";
+import Notifications from "./Notifications";
+import History from "./History";
+import Savings from "./Savings";
+import Settings from "./Settings";
 
 
 
@@ -17,10 +17,11 @@ export default function App() {
   return (
     <Router>
        <Navbar /> 
-       <div className="flex">
+       <div className="flex col p-0 m-0">
         <Sidebar />
         
 
+    <div className="bg-white w-screen max-w-screen min-h-screen">
         <Routes>
           <Route path="/" element={<Main/>}></Route>
           <Route path="/messages" element={<Messages/>}></Route>
@@ -30,6 +31,7 @@ export default function App() {
           <Route path="/settings" element={<Settings/>}></Route>
         </Routes>
         </div>
+    </div>
     </Router>
   );
 }
